@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Hero } from "./components/hero/hero";
 import { Partners } from "./components/partners/partners";
 import { CreatorCta } from "./components/creator-cta/creator-cta";
+import { Footer } from "./components/footer/footer";
 
 export default function HomePage() {
   const [query, setQuery] = useState("");
@@ -29,6 +30,7 @@ export default function HomePage() {
         <Partners />
         <CreatorCta />
       </main>
+      <Footer />
     </>
   );
 }
