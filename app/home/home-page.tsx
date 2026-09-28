@@ -7,6 +7,8 @@ import { Footer } from "./components/footer/footer";
 import { Categories } from "./components/categories/categories";
 import { Courses } from "./components/courses/courses";
 import { Testimonials } from "./components/testimonials/testimonials";
+import { Creators } from "./components/creators/creators";
+import { Learning } from "./components/learning/learning";
 
 export default function HomePage() {
   const [query, setQuery] = useState("");
@@ -44,6 +46,8 @@ export default function HomePage() {
           onClear={reset}
         />
         <Categories onSelect={setCategory} />
+        <Learning />
+        <Creators />
         <CreatorCta />
         <Testimonials />
       </main>
