@@ -30,7 +30,7 @@ export function AuthTemplate({
       </header>
 
       <main className="relative z-10 mx-auto my-auto grid w-full max-w-7xl flex-1 items-center gap-8 py-2 lg:grid-cols-[1.1fr_1fr] lg:gap-12">
-        <div className="flex max-w-xl flex-col justify-center">
+        <div className="hidden max-w-xl flex-col justify-center lg:flex">
           <h2 className="font-heading text-2xl font-bold tracking-tight text-white sm:text-3xl">
             {heading}
           </h2>
