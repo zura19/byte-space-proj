@@ -4,11 +4,19 @@ import { Hero } from "./components/hero/hero";
 import { Partners } from "./components/partners/partners";
 import { CreatorCta } from "./components/creator-cta/creator-cta";
 import { Footer } from "./components/footer/footer";
+import { Categories } from "./components/categories/categories";
+import { Courses } from "./components/courses/courses";
 
 export default function HomePage() {
   const [query, setQuery] = useState("");
   const [searchText, setSearchText] = useState("");
   const [category, setCategory] = useState("Featured");
+
+  const reset = () => {
+    setQuery("");
+    setSearchText("");
+    setCategory("Featured");
+  };
 
   return (
     <>
@@ -28,6 +36,13 @@ export default function HomePage() {
           }}
         />
         <Partners />
+        <Courses
+          query={query}
+          category={category}
+          onCategory={setCategory}
+          onClear={reset}
+        />
+        <Categories onSelect={setCategory} />
         <CreatorCta />
       </main>
       <Footer />
