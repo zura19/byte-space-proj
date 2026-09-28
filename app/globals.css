@@ -71,3 +71,91 @@
   --font-heading: "Poppins", Arial, sans-serif;
   --font-logo: "Clash Display", Arial, sans-serif;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 24px;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+  }
+  button,
+  a,
+  input {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+  button,
+  a,
+  input {
+    outline-offset: 5px;
+  }
+  :focus-visible {
+    outline: 2px solid #6b8eff;
+  }
+  ::selection {
+    background: var(--brand-lime);
+    color: var(--foreground);
+  }
+  dialog::backdrop {
+    background: #04081999;
+    backdrop-filter: blur(5px);
+  }
+}
+@layer components {
+  .page-container {
+    width: min(1200px, calc(100% - 48px));
+    margin-inline: auto;
+  }
+  .section-heading {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: clamp(30px, 3.1vw, 44px);
+    line-height: 1.22;
+    letter-spacing: -1.6px;
+  }
+  .blue-grid {
+    background-color: var(--brand-blue);
+    background-image:
+      linear-gradient(#ffffff1f 2px, transparent 2px),
+      linear-gradient(90deg, #ffffff1f 2px, transparent 2px);
+    background-size: 120px 120px;
+  }
+  .hero-ring {
+    top: 68px;
+    width: min(1149px, 90vw);
+    aspect-ratio: 1;
+    border: min(320px, 25vw) solid #cbfc01;
+  }
+  .lime-glow {
+    background: radial-gradient(ellipse at 50% 55%, #d4fb202b, transparent 65%);
+  }
+  .floating-card {
+    border: 1px solid #ffffff90;
+    background: #ffffffed;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px #04081916;
+  }
+}
+@media (max-width: 639px) {
+  .page-container {
+    width: calc(100% - 32px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
