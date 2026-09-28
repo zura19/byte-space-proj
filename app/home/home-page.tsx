@@ -6,6 +6,7 @@ import { CreatorCta } from "./components/creator-cta/creator-cta";
 import { Footer } from "./components/footer/footer";
 import { Categories } from "./components/categories/categories";
 import { Courses } from "./components/courses/courses";
+import { Testimonials } from "./components/testimonials/testimonials";
 
 export default function HomePage() {
   const [query, setQuery] = useState("");
@@ -44,6 +45,7 @@ export default function HomePage() {
         />
         <Categories onSelect={setCategory} />
         <CreatorCta />
+        <Testimonials />
       </main>
       <Footer />
     </>
