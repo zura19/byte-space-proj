@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container } from "../shared/ui";
+import { Container } from "@/app/components/ui";
 
 export function Partners() {
   return (

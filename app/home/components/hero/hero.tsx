@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Header } from "../header/header";
-import { Container, SearchIcon } from "../shared/ui";
-import { Ornament, ProgressCard, StudentsCard } from "../shared/visuals";
+import { Container, SearchIcon } from "@/app/components/ui";
+import { Ornament, ProgressCard, StudentsCard } from "@/app/components/visuals";
 
 export function Hero({
   onSearch,

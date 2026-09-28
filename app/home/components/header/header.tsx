@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Container, Logo } from "../shared/ui";
+import { Container, Logo } from "@/app/components/ui";
 import Link from "next/link";
 
 export function Header() {
@@ -25,14 +25,14 @@ export function Header() {
         </nav>
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="/login"
+            href="/auth/login"
             className="flex items-center gap-3 text-white/85 hover:text-lime"
           >
             Sign In
           </Link>
 
           <Link
-            href="/register"
+            href="/auth/register"
             className="flex items-center gap-3 text-white/85 hover:text-lime"
           >
             Join Us
@@ -59,8 +59,8 @@ export function Header() {
             ["Home", "#home"],
             ["Courses", "#courses"],
             ["Creators", "#creators"],
-            ["Sign In", "/login"],
-            ["Join Us", "/register"],
+            ["Sign In", "/auth/login"],
+            ["Join Us", "/auth/register"],
           ].map(([label, href]) => (
             <Link key={label} href={href} onClick={() => setOpen(false)}>
               {label}

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Container, SectionHeading } from "../shared/ui";
-import { Ornament, ProgressCard } from "../shared/visuals";
-import { CourseCard } from "../courses/course-card";
+import { Container, SectionHeading } from "@/app/components/ui";
+import { Ornament, ProgressCard } from "@/app/components/visuals";
+import { CourseCard } from "@/app/components/course-card";
 import { courses } from "../courses/course-data";
 
 export function Learning() {

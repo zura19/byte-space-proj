@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Container, SectionHeading } from "../shared/ui";
-import { CourseCard } from "./course-card";
+import { Container, SectionHeading } from "@/app/components/ui";
+import { CourseCard } from "@/app/components/course-card";
 import { courseCategories, courses } from "./course-data";
 
 export function Courses({
@@ -96,7 +96,7 @@ export function Courses({
             </p>
             <button
               onClick={onClear}
-              className="mt-5 rounded-full bg-lime px-5 py-3 font-medium"
+              className="mt-5 rounded-lg bg-lime px-5 py-3 font-medium"
             >
               Explore all courses
             </button>
