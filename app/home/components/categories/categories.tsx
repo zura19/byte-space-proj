@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, SectionHeading } from "../shared/ui";
+import { Container, SectionHeading } from "@/app/components/ui";
 const categories = [
   "Design",
   "Development",

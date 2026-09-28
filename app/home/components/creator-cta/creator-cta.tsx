@@ -1,5 +1,5 @@
-import { Container, SectionHeading, ActionLink } from "../shared/ui";
-import { Ornament } from "../shared/visuals";
+import { Container, SectionHeading, ActionLink } from "@/app/components/ui";
+import { Ornament } from "@/app/components/visuals";
 export function CreatorCta() {
   return (
     <section

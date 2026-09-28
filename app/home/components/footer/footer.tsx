@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-import { Container, Logo } from "../shared/ui";
+import { Container, Logo } from "@/app/components/ui";
 import Link from "next/link";
+
 export function Footer() {
   const [message, setMessage] = useState("");
   return (

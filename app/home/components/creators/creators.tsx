@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Container, SectionHeading } from "../shared/ui";
-import { Ornament, StudentsCard } from "../shared/visuals";
+import { Container, SectionHeading } from "@/app/components/ui";
+import { Ornament, StudentsCard } from "@/app/components/visuals";
 export function Creators() {
   return (
     <section
