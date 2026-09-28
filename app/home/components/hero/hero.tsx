@@ -15,7 +15,7 @@ export function Hero({
   return (
     <section
       id="home"
-      className="blue-grid hero-grid relative isolate overflow-hidden text-white"
+      className="blue-grid relative isolate overflow-hidden text-white"
     >
       <Header />
       <Container className="relative z-10 pt-9 text-center lg:pt-[42px]">

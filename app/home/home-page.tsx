@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { Hero } from "./components/hero/hero";
+import { Partners } from "./components/partners/partners";
+import { CreatorCta } from "./components/creator-cta/creator-cta";
 
 export default function HomePage() {
   const [query, setQuery] = useState("");
@@ -24,6 +26,8 @@ export default function HomePage() {
             setCategory("Featured");
           }}
         />
+        <Partners />
+        <CreatorCta />
       </main>
     </>
   );
