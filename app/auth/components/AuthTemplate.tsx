@@ -78,7 +78,7 @@ export function AuthTemplate({
                       className="size-[43px] rounded-full border border-white object-cover"
                     />
                   ))}
-                  <span className="relative flex h-[43px] flex-1 items-center justify-center text-xs font-bold text-black">
+                  <span className="relative bg-foreground rounded-full flex size-[43px] items-center justify-center text-xs text-white">
                     2K+
                   </span>
                 </div>
